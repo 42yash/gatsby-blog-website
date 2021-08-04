@@ -9,13 +9,14 @@ const Header = () => {
       site {
         siteMetadata {
           author
+          title
         }
       }
     }
   `)
     return (
         <header className={headerStyles.header}>
-            <h1 className={headerStyles.title}>{data.site.siteMetadata.author}</h1>
+            <h1 className={headerStyles.title}>{data.site.siteMetadata.title}</h1>
             <nav>
                 <ul className={headerStyles.navList}>
                     <li>
